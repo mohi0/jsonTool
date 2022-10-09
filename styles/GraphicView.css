@@ -6,6 +6,11 @@
     flex-direction: column;
     width: 100%;
 }
+#graphicViewDiv > div{
+    display: flex;
+    flex-direction: row;
+}
+
 #graphicViewDiv > button{
     padding: 0.3em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -22,9 +27,6 @@
     float: left;
     z-index: 0;
 }
-#mainDiv > div{
-}
-
 #mainDiv{
     overflow: scroll;
     position: relative;
