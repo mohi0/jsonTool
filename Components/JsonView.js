@@ -59,9 +59,8 @@ export default {
     <div class="jsonDiv" :ref="dragableRef" @mousedown="onPointerPress">
     <div v-if="jsonObject != null">
         <p>Type:</p>
-        <p v-if="Array.isArray(jsonObject) == false" :class="typeof jsonObject">{{typeof jsonObject}}</p>
+        <p :class="typeof jsonObject">{{typeof jsonObject}}</p>
 
-        <p v-else class="array">{{typeof jsonObject}}</p>
 
         <p v-if="typeof jsonObject == 'string'" class="value">{{jsonObject}}</p>
         <p v-if="typeof jsonObject == 'number'" class="value">{{jsonObject}}</p>
