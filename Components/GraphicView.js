@@ -78,6 +78,8 @@ export default {
     },
     template:`
     <div id='graphicViewDiv'>
+    <button @click="renderGraphic">Render</button>
+    <div>
     <!--
         <svg xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -91,9 +93,9 @@ export default {
             </defs>
         </svg>
         -->
-        <button @click="renderGraphic">Render</button>
         <div v-for="(obj, index) in nodes" >
             <json-view :json-object="obj.jsonObject" @elementPosChange="drawSegue" :json-key="'key'" @notifyNode="(key, elementRef) => nodeNotify(key, index, elementRef)"></json-view>
+        </div>
         </div>
     </div>
     `
