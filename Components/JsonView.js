@@ -61,6 +61,8 @@ export default {
         <p>Type:</p>
         <p :class="typeof jsonObject">{{typeof jsonObject}}</p>
 
+        <!-- This needs to be improved-->
+
 
         <p v-if="typeof jsonObject == 'string'" class="value">{{jsonObject}}</p>
         <p v-if="typeof jsonObject == 'number'" class="value">{{jsonObject}}</p>
